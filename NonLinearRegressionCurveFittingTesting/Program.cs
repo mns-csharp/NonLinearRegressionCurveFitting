@@ -29,7 +29,7 @@ class Program
             DataPlotter plotter = new DataPlotter();
             plotter.AddCurve($"ExpDecay{i}", autoCorrPoints.Item1, autoCorrPoints.Item2, Color.Red, IsSymbolVisible: false);
             plotter.AddCurve($"ExpDecay{i}", expDecay.Item1, expDecay.Item2, Color.Blue, IsSymbolVisible: false);
-            plotter.ZoomXaxis(0, 20);
+            plotter.ZoomXaxis(0, 1000);
             plotter.SavePlot(outputPath, $"{autocorrFiles[i]}.png");
         }
 
