@@ -23,7 +23,7 @@ public static class MathUtils
         {
             double y = Math.Abs(A) * Math.Exp((-1) * Math.Abs(x/1000.0) * Math.Abs(b) * 10);
 
-            xValues.Add(x/1000.0);
+            xValues.Add(x);
             yValues.Add(y);
         }
 
